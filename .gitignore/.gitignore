@@ -1,2 +1,10 @@
-"*.iml"
-".idea/"
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../:\Users\power\IdeaProjects\E\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+*.iml
+.idea/
