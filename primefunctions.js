@@ -16,7 +16,7 @@ function primeGen(num) {
   return prime;
 }
 
-function cumulativeSum(arr){
+function cumulativeSum(arr) {
   let sum = 0;
   const ret = [];
   for (let i = 0; i < arr.length; i++) {
@@ -27,5 +27,16 @@ function cumulativeSum(arr){
   return ret;
 }
 
+function maxPrimeSum(num) {
+  const ret = [];
+  const prime = primeGen(num);
+  const sumList = cumulativeSum(prime);
+  const sum = sumList.pop();
+  ret.push(sum);
+  ret.push(prime.length);
+  return ret;
+}
+
 console.log(primeGen(10));
 console.log(cumulativeSum([1, 2, 3, 4, 5, 6]));
+console.log(maxPrimeSum(10));
